@@ -1,0 +1,63 @@
+{
+  "name": "consumer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "esm": "^3.2.11",
+    "express": "^4.16.4",
+    "express-async-wrap": "^1.0.0",
+    "express-healthcheck": "^0.1.0",
+    "express-session": "^1.15.6",
+    "http": "0.0.0",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.3.4",
+    "eslint": "^5.15.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-watch": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG='*:info,*:error,*:warn' nodemon --inspect --require dotenv/config server.js"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "jest": true,
+      "node": true
+    },
+    "extends": "standard",
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {}
+  },
+  "author": "Mohan <mohan589@gmail.com>",
+  "license": "ISC"
+}
